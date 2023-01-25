@@ -1,0 +1,2038 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    text-align:left ;
+    overflow: scroll;
+}
+html{
+    scroll-behavior: smooth;
+}
+ :root{
+    --red:#EE0D09;
+    --blue: #001659;
+    --white:#fff;
+}
+/*start top nav*/
+.header-top-wrap{
+    color: white;
+    background-color: #001659;
+    height: 5vh;
+    line-height: 40px;  
+}
+.header-top-wrap a{
+    text-decoration: none;
+    color: var(--white);
+}
+.header-top-wrap p{
+    font-size: 100%;
+}
+/*end top nav*/
+/*start navp par*/ 
+.nav-par{
+    height: 10%;
+    background-color: var(--white);
+    color: var(--blue);
+    padding-top: 8px;
+}
+.nav-par .icon{
+    text-align: center;
+}
+.nav-par .icon button {
+    border: none;
+    background-color: var(--white);
+    color: var(--blue);
+}
+ul li {
+    float: left;
+    padding: 15px 22px 0 0;
+    font-weight: bold;
+}
+.nav-par ul{
+    list-style: none;
+}
+.nav-par ul li a {
+    color: var(--blue);
+    text-decoration: none;
+}
+.nav-par ul li.active a, 
+.active,
+.nav-par ul li a:hover ,
+li a:hover{
+    color: var(--red);
+}
+.get{
+    width: 150px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--red);
+    margin: 5px;
+    padding: 10px;
+    border: none;
+}
+.nav-par input[type="text"]{
+    width: 200px;
+    height: 40px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-left: -320px;
+    display: none;
+
+}
+.nav-par input[type="text"]:hover{
+    visibility: visible;
+}
+
+/*end navp par*/ 
+/*start header*/
+.carousel-inner{
+    height: 650px;
+}
+.carousel-inner img{
+    display:no-repeat ;
+    size: cover;
+    height: 100vh;
+    position: relative;
+}
+.go-down{
+    position: absolute; 
+    transition: 0.3s;
+    margin-left: -10px;
+}
+.go-down i{
+    animation: bouncing 1.5s infinite;
+}
+@keyframes bouncing{
+    0%, 
+    10%, 
+    20%, 
+    50%, 
+    80%, 
+    100%{
+        transform: translateY(0);
+    }
+    40%,
+    60%{
+        transform: translateY(-15px);
+    }
+}
+.carousel-inner .header-animation{
+    position: relative;
+    animation: example 1s forwards; 
+}
+@keyframes example {
+    from{
+        top: 0px;
+    }
+    to{
+        top: 100px;
+    }
+}
+.carousel-inner h1{
+font-size: 60px;
+color: var(--white);
+text-indent: 100px;
+}
+.carousel-inner p{
+    font-size: 30px;
+    color: var(--white);
+    text-indent: 100px;
+}
+.carousel-inner input{
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--red);
+    color: var(--white);
+    margin:  30px 100px;
+}
+.carousel-inner .header-info {
+    visibility: visible;
+    animation-delay: 0.9s;
+    animation-name: fadeInUp;
+}  
+.carousel-inner .container a img{
+    margin: 300px 600px ;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+}
+/*end header*/
+/*start services*/
+.services{
+    background-color: #F7F7F7;
+    height: 700px;
+    padding: 20px;
+}
+.services .Rescue{
+    width: auto;
+    height: 350px;
+    padding: 30px ;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: 0 5px 14px 1.5px rgb(157 157 157/15%);
+    margin-bottom: 0 0 30px;
+    margin-top: 60px;
+}
+.services .Rescue .icon {
+    width: 100px;
+    height: 100px;
+    background-color: var(--red);
+    border-radius: 50%;
+    margin: 20px 75px;
+}
+.services .Rescue .icon img{
+    margin: 30px 10px;
+    width: 86px; 
+    height: 86px; 
+}
+.services h2{
+    color: var(--red);
+    font-size: 60px;
+    text-align: center;
+    margin-top: 40px;
+}
+.services .Rescue p{
+    color: var(--red);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+.Rescue a img,
+.Maintenance a img{
+    margin: 60px 100px;
+}
+.services .Maintenance{
+    width: auto;
+    height: 350px;
+    padding: 30px ;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: 0 5px 14px 1.5px rgb(157 157 157/15%);
+    margin-bottom: 0 0 30px;
+    margin-top: 60px;
+}
+.services .Maintenance .icon {
+    width: 100px;
+    height: 100px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    margin: 20px 75px;
+}
+.services .Maintenance .icon img{
+    margin: 16px 11px;
+    width: 70px;
+     height: 70px; 
+}
+.services .Maintenance p{
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+.services .Rent-buy,
+.services .Parking{
+    height: 350px;
+    padding: 30px ;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 5px 14px 1.5px rgb(157 157 157/15%);
+    margin-bottom: 0 0 30px;
+    margin-top: 60px;
+}
+.services .Rent-buy .icon,
+.services .Parking .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px 75px;
+}
+.services .Rent-buy .icon{
+    background-color: var(--red);
+}
+.services .Parking .icon {
+    background-color: var(--blue);
+}
+.services .Rent-buy .icon img{
+    margin: 31px 8px;
+    width: 86px; 
+    height: 86px; 
+}
+.services .Rent-buy{
+    background-color: var(--white);
+}
+.services .Rent-buy p,
+.services .Parking p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+.services .Rent-buy p{
+    color: var(--red);
+}
+.Rent-buy a img,
+.Parking a img{
+    margin: 60px 100px;
+}
+.services .Parking .icon img{
+    margin: 8px 8px;
+    width: 78px; 
+    height: 78px; 
+}
+.services .Parking{
+    background-color: var(--white);
+}
+.services .Parking p{
+    color: var(--blue);
+}
+/*end services*/
+/* Start Maintenance*/
+.Maintenances{
+    background-color: var(--blue);
+    height: 300px;
+}
+.Maintenances .Repair h1{
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--white);
+    padding: 40px 0 0;
+    padding-left: 60px;
+}
+.Maintenances .Repair p{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--white);
+    padding:0 40px 0 0;
+    padding-left: 60px;
+}
+.Maintenances .Repair input{
+    background-color: var(--red);
+    color: var(--white);
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    font-weight: bold;
+    border: none;
+    margin-left: 160px;
+}
+.Maintenances .img-repair{
+    margin: -280px 815px ;
+}
+.Maintenances .img-repair img,
+.Maintenances1 .img-repair img{
+    width: 600px; 
+    height: 300px;
+}
+.Maintenances1{
+    background-color: var(--red);
+    height: 300px;
+    margin-top: 120px;
+}
+.Maintenances1 .Repair h1{
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--white);
+    padding: 40px 600px 0;
+    padding-right: 60px;
+}
+.Maintenances1 .Repair p{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--white);
+    padding: 20px 600px 0;
+    padding-right: 60px;
+}
+.Maintenances1 .img-repair{
+    margin: -320px 0 0 -120px ;
+}
+/* End Maintenance*/
+/*start parking*/
+.parking{
+    height: 800px
+}
+.parking h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--blue);
+    padding-top: 40px;
+}
+.parking .steps .step-one,
+.parking .steps .step-two,
+.parking .steps .step-three,
+.parking .steps .step-four{
+    width: 84px;
+    height: 84px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius:50% ;
+    margin: 50px;
+}
+.parking .steps .step-one h2,
+.parking .steps .step-two h2,
+.parking .steps .step-three h2,
+.parking .steps .step-four h2{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 24px;
+}
+.parking .steps  p{   
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--blue);
+}
+.parking .position {
+    margin: 30px 0;
+}
+.parking .position .book p{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--blue);
+    padding: 80px 40px 0;
+}
+.parking .position .book input{
+    width: 220px;
+    height: 60px;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    margin: 50px 120px ;
+}
+.parking .steps .line1,
+.parking .steps .line2{
+    width: 170px;
+    height: 4px;
+    background-color: var(--red);
+}
+.parking .steps .line1{
+    margin: -135px 0 0 174px;
+}
+.parking .steps .line2{
+    margin: -156px 0 0 174px;
+}
+/*end parking*/
+/*Start Buy & Rent*/
+.app-buy-rent{
+    height: 480px;
+    background-image: url(image/s.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px;
+}
+.app-buy-rent h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.app-buy-rent p{
+    font-size: 25px;
+    text-align: center;
+}
+.app-buy-rent .bere{
+    padding-top: 40px;
+    text-align: center;
+}
+.app-buy-rent input{
+    background-color: var(--red);
+    border: none;
+    width: 180px;
+    height: 50px;
+    color: var(--white);
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+/*End Buy &R ent*/
+/*start About us*/
+.About-us{
+    height: 700px;
+}
+.About-us .image2{
+    margin-left: 80px ;
+}
+.About-us .aabout{
+    padding-top: 70px;
+}
+.About-us .about h1{
+    font-size: 40px;
+    margin-top: 100px;
+    font-weight: bolder;
+    color: var(--red);
+}
+.About-us .about p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: var(--blue);
+}
+.About-us .about input{
+    width: 120px;
+    height: 50px;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    margin-top: 40px;
+}
+/*end About us*/
+/* Start Crane*/
+.image-crane{
+    background-image:url(image/cran.jpg);
+    height: 600px;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    height: 100vh;
+}
+.image-crane .crane{
+    width: 450px;
+    height: 450px;
+    background-color: var(--white);
+    opacity: 80%;
+    position: absolute;
+    margin-top:160px ;
+    padding: 50px;
+}
+.image-crane .crane h1{
+    font-size: 40px;
+    margin-top: 100px;
+    font-weight: bolder;
+    color: var(--blue);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.image-crane .crane p{
+    font-size: 20px;
+    margin-top: 100px;
+    font-weight: bold;
+    color: var(--blue);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.image-crane input{
+    background-color: var(--red);
+    width: 200px;
+    height: 50px;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    position: absolute;
+    margin: 520px 70px; 
+}
+/* End Crane*/
+/*start footer*/
+.footer{
+    height: 750px;
+    background-color: var(--blue);
+    color: white;
+    padding: 40px;
+}
+.footer i{
+    width: 50px;
+    height: 50px;
+    color: var(--white);
+    font-size: 40px;
+    text-align: center;
+    padding-top: 5px;
+    margin-left: 70px;
+}
+.footer .foot {
+    background-color: var(--red);
+}
+.footer h,
+.footer p{
+    color: var(--white);
+    font-size: 15px;
+    font-weight: bold;
+}
+.footer .col{
+    border-right: 1px solid rgba(202, 199, 199, 0.466);
+}
+hr{
+    width: 1100px;
+    height: 2px;
+    color: #eee;
+    position: absolute;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.footer .footer-logo{
+    margin-top: 100px;
+}
+.footer .footer-logo p{
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer .footer-logo h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white);
+    margin-top: 20px ;
+    margin-bottom: 40px;
+}
+.footer .footer-logo .home{
+    opacity: 80%;
+    font-weight: normal;
+}
+.footer .footer-logo input{
+    width: 150px;
+    height: 40px;
+    background-color: var(--blue);
+    border-width: 1px ;
+    border-color: rgba(255, 255, 255, 0.89) var(--blue) rgba(255, 255, 255, 0.89) rgba(255, 255, 255, 0.89) ;
+    color: var(--white);
+    text-align: left;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-left: 8px;
+}
+.footer .footer-logo input:focus{
+    border-color: var(--white);
+    outline: none;
+}
+button, input {
+    overflow: visible;
+}
+.footer button{
+    background-color: var(--blue);
+    border: none;
+}
+.footer .plane{
+    width: 40px;
+    height: 40px;
+    background-color: var(--red);
+    margin: -41px 140px;
+}
+.footer .footer-icon{
+    margin-top: 50px;   
+}
+.footer .footer-logo .footer-icon i{
+    display: inline;
+}
+.footer .footer-end p{
+    margin-top: 100px;
+    font-size: 20px;
+}
+.footer .footer-arrow i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: var(--red);
+    margin-top: 100px;
+    border-radius: 6px;
+    line-height: 25px;
+}
+/*end footer*/
+/*********************************login-register********************************/
+/*start login-register*/
+.Register .section-class{
+    padding: 80px;
+    background-image: url(image/breadcrumb_bg.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    height: 300px;
+}
+.Register .section-class h1{
+    font-size: 50px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: bold;
+}
+.Register .section-class p{
+    color: var(--blue);
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+.Register .section-class span{
+    border-left: 1px solid var(--blue);
+    padding-left: 10px;
+}
+.Register{
+    height: 900px;
+    background-color: rgb(241, 241, 241);
+}
+.Register .container {
+    margin-top: -40px;
+}
+.Register .login{
+    background-color:var(--white);
+}
+.Register .login h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--blue);
+}
+.Register .regpage{
+    background-color: #f8f9fa;
+    height: 600px;
+    padding: 30px;
+    box-shadow: 0 5px 14px 1.5px rgb(157 157 157/15%);
+}
+.Register .logpage{
+    height: 600px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 5px 14px 1.5px rgb(157 157 157/15%);
+}
+.Register label,
+.Register .regpage label {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: var(--blue);
+    font-size: 15px;
+    font-weight: bold;
+}
+.Register .login input{
+    padding-left: 8px;
+    width: 580px;
+    height: 50px;
+    background-color:   #f8f9fa;
+    border: 1px solid  #ebebeb;
+}
+.Register .login .botton,
+.Register .regpage .botton{
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    margin-top: 20px;
+}
+.Register .regpage .botton{
+    margin-top: 40px;
+    margin-left: 12px;
+} 
+.Register .login .cancel{
+    margin-left: 10px;
+}
+.Register .login .cancel,
+.Register .regpage .cancel{
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+    background-color: var(--white);
+    color: rgb(119, 119, 119);
+    border: 1px solid #ebebeb;
+}
+.Register .regpage .cancel{
+    margin-top: 40px;
+    margin-left: 13px;
+}
+label{
+    display: block;
+}
+.Register .login .form-check-input{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.Register .login .form-check-label{
+    margin-top: 40px;
+}
+.Register .login p{
+    color: var(--blue);
+    font-size: 15px;
+    font-weight: bold;
+}
+.Register .regpage h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--blue);
+}
+.Register .regpage input{
+    padding-left: 8px;
+    width: 260px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+}
+/*end login-register*/
+/***************************************************Crane*******************************************/
+/*start crane*/
+.crane-page {
+    background-repeat:no-repeat ;
+    background-size: cover;
+    width: 100%;
+    background-image: url(image/hero_craneee.jpg);
+    object-fit: cover;
+    object-position: center;
+    height: 600px;
+    margin: 0;    
+    position:relative;
+}
+.crane-page input{
+    padding-left: 8px;
+    margin-bottom: 15px;
+    width: 405px;
+    height: 50px;
+    background-color:  #f8f9fa;
+    border: 1px solid #ebebeb;
+}
+.Rescue select{
+    width: 405px;
+    height: 50px;
+    background: rgb(241, 241, 241);
+    border: 1px solid #ebebeb;
+    padding-left: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    background-color: #f8f9fa;
+    border: none;
+}
+.crane-page .Rescue{
+    position: absolute;
+    margin-top: 60px;
+    padding: 45px;
+    width: 500px;
+    height: 500px;
+    background-color: var(--white);
+}
+.crane-page .Rescue h1{
+    margin-top: -25px;
+    color: var(--red);
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.crane-page .button{
+    margin-top: 15px;
+    margin-left: 125px;
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+} 
+.Emergency{
+    height: 300px;
+    padding: 30px;
+    background-color: var(--white);
+}
+.Emergency .red{
+    width: 500px;
+    height: 200px;
+    background-color: var(--red);
+    color: var(--white);
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 140px;
+}
+.Emergency .blue{
+    width: 500px;
+    height: 200px;
+    margin-top: 20px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.Emergency h1{
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.Emergency p{
+    font-size: 12px;
+}
+.Emergency .red input{
+    color: var(--red);
+}
+.Emergency .red input,
+.Emergency .blue input{
+    width: 140px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--white);
+    border: none;
+}
+.Emergency .blue input{
+    color: var(--blue);
+}
+/*end crane*/
+/*************************************************Maintenance*********************************/
+/*start Maintenance*/
+.Maintenance-services{
+    margin-bottom: 40px;
+}
+.Maintenance-services .vechile-services{
+    height: 600px;
+    background-image: url(image/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 40px;
+}
+.Maintenance-services .overlay{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(0 0 0 / 60%);
+}
+.Maintenance-services .vechile-services h1{
+    margin-top: 30px;
+    display: flex;
+    margin-left: 600px;
+    position: absolute;
+    font-size: 40px;
+    z-index: 3;
+}
+.Maintenance-services .vechile-services p{    
+    margin-left: 600px;
+    text-align: center;
+    position: absolute;
+    font-size: 20px;
+    margin-top: 80px;
+    z-index: 3;
+}
+.Maintenance-services .vechile-services .Wheels,
+.Maintenance-services .vechile-services .Washing,
+.Maintenance-services .vechile-services .Painting,
+.Maintenance-services .vechile-services .Repair{    
+    padding: 30px;
+    position: relative;
+}
+.Maintenance-services .vechile-services .list-services__inner{
+    transition: all 0.3s;
+}
+.Maintenance-services .vechile-services .list-services__description{
+    visibility: hidden;
+}
+.Maintenance-services .vechile-services .Wheels:hover,
+.Maintenance-services .vechile-services .Painting:hover,
+.Maintenance-services .vechile-services .Repair:hover,
+.Maintenance-services .vechile-services .Washing:hover {
+    background-color: var(--red);
+    height: 340px;
+}
+.Maintenance-services .vechile-services .Wheels:hover .list-services__description,
+.Maintenance-services .vechile-services .Painting:hover .list-services__description,
+.Maintenance-services .vechile-services .Repair:hover .list-services__description,
+.Maintenance-services .vechile-services .Washing:hover .list-services__description{
+    margin-top: -30px;
+    font-size: 15px;
+    visibility: visible;
+}
+.Maintenance-services .vechile-services .Wheels:hover .list-services__inner h2,
+.Maintenance-services .vechile-services .Painting:hover .list-services__inner h2,
+.Maintenance-services .vechile-services .Repair:hover .list-services__inner h2,
+.Maintenance-services .vechile-services .Washing:hover .list-services__inner h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.Maintenance-services .vechile-services .Wheels:hover strong,
+.Maintenance-services .vechile-services .Painting:hover strong,
+.Maintenance-services .vechile-services .Repair:hover strong,
+.Maintenance-services .vechile-services .Washing:hover strong{
+    visibility: hidden;
+}
+.Maintenance-services .vechile-services .vechile .bord{
+    width: 1px;
+    height: 299px;
+    background-color: var(--white);
+    margin: -300px 269px;
+}
+.Maintenance-services .vechile-services .Wheels img,
+.Maintenance-services .vechile-services .Washing img,
+.Maintenance-services .vechile-services .Repair img,
+.Maintenance-services .vechile-services .Painting img
+{
+    display: block;
+    padding-bottom: 80px;
+}
+.Maintenance-services .vechile-services div.Wheels::after,
+.Maintenance-services .vechile-services div.Washing::after,
+.Maintenance-services .vechile-services div.Painting::after{
+    content: "";
+    background-color: var(--white);
+    position: absolute;
+    width: 1px;
+    height: 300px;
+    top: 0;
+    right: 0;
+}
+.Maintenance-services .vechile-services .vechile .whe{
+    width: 40px;
+    height: 1px;
+    margin-top: -40px;
+    background-color: var(--white);
+}
+.Maintenance-services .vechile-services .vechile .whee{
+    width: 40px;
+    height: 1px;
+    margin-top: 3px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    background-color: var(--white);
+}
+.Maintenance-services .vechile-services .vechile{
+    opacity: 80%;
+    background-color: var(--blue);
+    width: 1200PX;
+    height: 300px;
+    font-weight: bold;
+    margin-top: 160px;
+    margin-left: 30px;
+    font-size: 20px;
+    position: absolute;
+    z-index: 3;
+    transition: all 1000ms ease 0s; 
+}
+.Maintenance-services .vechile-services h2{
+    font-size: 20px;
+}
+.Maintenance-services .vechile-services strong{
+    font-size: 30px;
+}
+.Maintenance-services .Maintenance-form{
+    margin-left: 150px;
+    width: 1000px;
+    padding-left: 75px;
+}
+.Maintenance-services .Maintenance-form h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--red);
+}
+.Maintenance-services .Maintenance-form p{
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--blue);
+    margin-bottom: 40px;
+}
+.Maintenance-services .name{
+    display: inline;
+    padding-left: 8px;
+    margin-bottom: 30px;
+    margin-right: 22px;
+    width: 405px;
+    height: 40px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid #ccc;
+}
+.Maintenance-services .nam{
+    padding-left: 8px;
+    width: 840px;
+    height: 40px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+.Maintenance-services .nam:hover,
+.Maintenance-services .name:hover,
+.Maintenance-services select:hover,
+.Maintenance-services textarea:hover,
+.Maintenance-services input[type="datetime-local"]:hover,
+.Maintenance-services input[type="submit"]:hover{
+    box-shadow: 0 0 20px 0 rgba(51, 51, 51, 0.514); 
+}
+.Maintenance-services label{
+    color: var(--blue);
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Maintenance-services .sel select {
+    width: 840px;
+    height: 40px;
+    background: rgb(241, 241, 241);
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+.Maintenance-services span{
+    color: var(--red);
+}
+.Maintenance-services form{
+    margin-bottom: 30px;
+}
+.Maintenance-services textarea{
+    width: 840px;
+    height: 140px;
+    background: rgb(241, 241, 241);
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+}
+.Maintenance-services input[type="submit"]{
+    margin-top: 15px;
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+} 
+.Maintenance-services input[type="datetime-local"]{
+    width: 300px;
+    color: var(--blue);
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+/*end Maintenance*/
+/************************************Maintenance regester*******************************************/
+.mainbig{
+    height: 600px;
+}
+.Maintenance-regester {
+    background-image: url(image/image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+}
+.regester{
+    z-index: 2;
+    margin-top: -360px;
+    position: absolute;
+}
+.regester p{
+    color: var(--white);
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+}
+.regester input{
+    margin-top: 15px;
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    margin-right: 30px;
+}
+.main-serv{
+    height: 600px;
+    background-image: url(image/pattern.png);
+    position: relative;
+}
+.main-serv .information-services{
+    background-color: var(--white);
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+}
+ .mainOil{
+    height: 600px;
+    text-align: center;
+    position: relative;
+}
+.mainOil h1{
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.mainOil p{
+    color: var(--blue);
+    font-size: 20px;
+    margin-top: 30px;
+}
+.mainOil .oil{
+    width: 410px;
+    background-color: #F7F7F7;
+    box-shadow: 5px 5px 5px 1.5px rgba(157, 157, 157, 0.329);
+
+    padding: 20px;
+    position: relative;
+    margin-left: 20px;
+}
+.mainOil .oil:hover h1{
+    color: var(--red);
+}
+.mainOil .oil:hover{
+    border-bottom: 4px solid var(--red);
+}
+.mainOil .oil:hover img{
+    transform: rotate(3deg);
+}
+/*********************************************Service-Maintenance*****************************/
+.main-serv{
+    height: 600px;
+    background-image: url(image/pattern.png);
+    position: relative;
+    padding: 40px;
+}
+.head-info h1,
+.spare-info h1{
+    color: #001659;
+    font-size: 40px;
+}
+.head-info p,
+.spare-info p {
+    color: #001659;
+    font-size: 20px;
+    color: #797979;
+}
+.head-info h1::after{
+    content: '';
+    background-color: #EE0D09;
+    position: absolute;
+    width: 48px;
+    height: 2px;
+    margin-top: 40px;
+}
+.box-shadow{
+    width: 400px;
+    height: 320px;
+    background-color: #fff;
+    position:relative;
+    margin-top: 20px;
+    padding: 10px;
+    display: block;
+    box-shadow: 0 5px 14px 1.5px rgba(157, 157, 157, 0.329);
+}
+.box-shadow:hover {
+    margin-top: 10px;
+}
+.main-serv .box-shadow p{
+    font-size: 25px;
+    color:var(--red);
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box-shadow ul {
+    color: var(--blue);
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    list-style-position: inside;
+}
+.box-shadow ul li{
+    display: list-item;
+}
+.main-serv .box-shadow{
+    border-bottom: 3px solid var(--red);
+}
+/************************************Spare Parts Maintenance *******************************************/
+.spare-parts{
+    height: 800px;
+    background-image: url(image/pattern.png);
+    position:relative;
+    padding: 40px;
+}
+.spare-info h1::after{
+    content: '';
+    background-color: #EE0D09;
+    position: absolute;
+    width: 48px;
+    height: 2px;
+    margin-top: -50px;
+    margin-left: 350px;
+}
+.spare{
+    width: 400px;
+    height: 480px;
+    background-color: #fff;
+    position:relative;
+    margin-top: 40px;
+    padding: 10px;
+    display: block;
+    box-shadow: 0 5px 14px 1.5px rgba(157, 157, 157, 0.329);
+}
+.spare-parts .spare:hover{
+    margin-top: 20px;
+}
+.spare-parts .spare p{
+    font-size: 25px;
+    color:var(--red);
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.spare-parts ul {
+    color: var(--blue);
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    list-style-position: inside;
+}
+.spare-parts ul li{
+    display: list-item;
+}
+.spare-parts .spare{
+    border-bottom: 3px solid var(--red);
+}
+/*********************************************  Maintenance Login *******************************************/
+.car-login{
+    height: 700px;
+    background-image: url(image/pattern.png);
+    background-size: cover;
+    position: relative;
+}
+.car-form{
+    width:460px;
+    height: 550px;
+    background-color: var(--white);
+    position: relative;
+    margin-top: 60px;
+    margin-left: 140px;
+    box-shadow: 0 5px 14px 1.5px rgba(157, 157, 157, 0.329);
+}
+.car-form p{
+    color: var(--red);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.car-form ul {
+    color: var(--blue);
+    font-size: 20px;
+    display: block;
+    position: absolute;
+    list-style-position: inside;
+}
+.car-form ul li{
+    display: list-item;
+}
+.car-form button{
+    width: 50px;
+    height: 25px;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 12px;
+    text-align: center;
+    border: none;
+    margin-left: 10px;
+}
+.car-login button:hover{
+    background-color:#fa221f;
+}
+/*************************Start message details of Maintenance login***********************************************/
+.message-details{
+    height: 600px;
+    background-image: url(image/car-5.png);
+}
+.message{
+    width: 500px;
+    height: 450px;
+    text-align: center;
+    background-color: var(--white);
+    position: relative;
+    margin-top: -520px;
+    margin-left: 380px;
+    opacity: 85%;
+}
+.message ul{
+    color: var(--red);
+    font-size: 25px;
+    display: block;
+    position: absolute;
+    list-style-position: inside;
+    margin-top: 40px;
+}
+.message ul li{
+    display: list-item;
+}
+/**********************************************Buy & Rent*******************************************************/
+.page-buy-rent{
+    height: 1600px;
+    background-color: #F7F7F7;
+}
+.page-buy-rent img{
+    width: 100%;
+    height: 400px;
+}
+.div-buy-rent{
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    width: 1000px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    margin-top: -100px;
+    margin-left: 160px;
+    box-shadow: 0 5px 14px 1.5px rgba(157, 157, 157, 0.329);
+}
+.div-buy-rent input{
+    width: 280px;
+    height: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    margin-right: 20px;
+}
+.make-car {
+    background-color: #F7F7F7;
+    height: 600px;
+    margin-top: 160px;
+}
+.make-car .make1{
+    background: white;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border: 1px solid rgba(204, 204, 204, 0.836);
+}
+.make-car h1{
+    color: var(--blue);
+    font-size: 20px;
+}
+.make-car p{
+    color: #00263c;
+}
+.make-car span{
+    color: #00263c;
+    background-color: #f6f5ff;
+    padding: 3px;
+}
+.make-car small{
+    color: rgb(148, 148, 148);
+}
+.make-car .suzuki{
+    object-fit: cover;
+    transition: all .2s linear;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.make-car a{
+    text-decoration: none;
+}
+.make-car .automatic p{
+    display: inline;
+    color: #00263c;
+    background-color: #Dee2e6;
+    padding: 3px;   
+}
+.make-car .used{
+    margin-top: -10px;
+}
+.make-car .used p, .use{
+    display: inline;
+}
+.make-car i{
+    margin-left: 40px;
+}
+.make-car .use p{
+    display: inline;
+    color: #495057;
+}
+/***************************************************Buy*****************************************************/
+.buy-bage{
+    position: relative;
+    height: 1300px;
+}
+.selec-car{
+    width: 800px;
+    height: 140px;
+    padding: 30px;
+    position: absolute;
+    background-color: var(--white);
+    box-shadow: 0 5px 14px 1.5px rgba(157, 157, 157, 0.329);
+    margin-top: -75px;
+    z-index: 1;
+    margin-left: 220px;
+}
+.selec-car p{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--blue);
+}
+.selec-car select{
+    width: 250px;
+    height: 40px;
+}
+.selec-car .search{
+    color: var(--white);
+    background-color: var(--blue);
+    height: 40px;
+    width: 100px;
+    border: none;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.buy-bage .car-brands{
+    height: 800px;
+    margin-top: 200px;
+    margin-left: 80px;
+}
+.buy-bage .car-brands .brand{
+    width: 180px;
+    height: 180px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+}
+.buy-bage .car-brands .brand:hover{
+    box-shadow: 0 5px 14px 1.5px rgba(157, 157, 157, 0.329);
+}
+.buy-bage .car-brands .brand img{
+    width: 100%;
+}
+/*******************************************Suzuki************************************************/
+.Suzuki-car{
+    height: 1000px;
+    padding: 40px;
+    background-color: #F7F7F7;
+}
+.Suzuki-car h1{
+    color: var(--blue);
+    font-size: 40px;
+}
+.Suzuki-car p{
+    color: #00263c;
+    font-size: 20px;
+}
+.Suzuki-car span{
+    color: #00263c;
+    background-color: var(--white);
+    padding: 3px;
+    font-size: 20px;
+}
+.Suzuki-car small{
+    color: rgb(148, 148, 148);
+    font-size: 20px;
+}
+.Suzuki-car .Specifications{
+    width: 860px;
+    background-color: var(--white);
+    border-bottom: 4px solid var(--blue);
+    padding: 10px;
+    margin-top: 40px;
+}
+.Suzuki-car .Specifications p{
+    font-weight: bold;
+    font-size: 30px;
+}
+.Suzuki-car hr{
+    color: rgb(165, 165, 165);
+    margin-top: -2px;
+    margin-left: -4px;
+    width: 850px;
+}
+.Suzuki-car .spec{
+    background-color: var(--white);
+    margin-top: 40px;
+    padding: 20px 10px 10px;
+}
+.Suzuki-car input{
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+.Suzuki-car .spec .row{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 12px;
+}
+.Suzuki-car .spec p{
+    font-size: 14px;
+}
+.Suzuki-car .car-used .internal h1{
+    background-color: var(--white);
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 7px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.Suzuki-car .car-used .internal i{
+    margin-top: 10px;
+}
+.Suzuki-car .car-used .internal{
+    background-color: var(--white);
+    padding: 10px;
+    margin-top: 20px;
+}
+/*************************************search buy*************************************************/
+.search-buy{
+    height: 800px;
+    background-color: #F7F7F7;
+}
+.search-buy .car{
+    margin: 40px;
+    border: 1px solid #ccc;
+    background-color: var(--white);
+    box-shadow: 0 5px 14px 1.5px rgba(157, 157, 157, 0.329);
+}
+.search-buy .used{
+    margin-left: -20px;
+}
+.search-buy .car h1{
+    color: var(--blue);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.search-buy .car h1::before{
+    content: '';
+    background-color: #ccc;
+    position: absolute;
+    width: 554px;
+    height: 1px;
+    margin-top: 50px;
+    margin-left: -40px;
+}
+.search-buy .car select{
+    border: 1px solid #ccc;
+    color: rgb(92, 92, 92);
+    padding: 10px;
+    margin: 10px;
+    margin-left: 30px;
+    width: 490px;
+}
+.search-buy .car .prices{
+    margin-left: 20px;
+}
+.search-buy .car .price{
+    border: 1px solid #ccc;
+    color: rgb(92, 92, 92);
+    padding: 10px;
+    margin: 10px;
+    width: 233px;
+}
+.search-buy .car input[type="submit"]{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+/*************************************search rent*************************************************/
+.search-rent{
+    height: 520px;
+    background-color: #F7F7F7;
+    padding-top: 60px;
+}
+.search-rent h1{
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: bold;
+}
+.search-rent p{
+    font-size: 20px;
+    color: var(--blue);
+}
+.search-rent input{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+.search-rent .details{
+    width: 70px;
+    height: 26px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    margin-top: 100px;
+}
+.search-rent .color-red,
+.search-rent .color-blue,
+.search-rent .color-orang,
+.search-rent .color-white,
+.search-rent .color-gray{
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.search-rent .color-red{
+    background-color: red;
+}
+.search-rent .color-blue{
+    background-color: blue;
+}
+.search-rent .color-orang{
+    background-color: orange;
+}
+.search-rent .color-white{
+    background-color: white;
+}
+.search-rent .color-gray{
+    background-color: gray;
+}
+
+/**********************************rent form*****************************************/
+.rent-form{
+    height: 800px;
+    background-color: #f7f7f7;
+    padding-top: 60px;
+    padding-left: 300px;
+}
+.rent-form label{
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.rent-form input[type='text']{
+    width: 800px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.rent-form input[type='text']:hover{
+    box-shadow: 0 5px 14px 1.5px rgba(157, 157, 157, 0.329);
+}
+.rent-form input[type='submit']{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+/*******************************User account************************************/
+.user-profile{
+    width : 800px;
+    height: 700px;
+    background-color:var(--white);
+    margin-left: 350px;
+    color: var(--blue);
+}
+.user-profile .user-header h1{
+    font-size: 20px;
+    margin: 25px;
+    margin-top: 40px;
+}
+.user-profile .user-header .col-12{
+    font-size: 15px;
+    margin: 15px;
+    position: relative;
+}
+.user-header .circle{
+    width: 90px;
+    height: 90px;
+    background-color: #ebebeb;
+    border-radius: 50%;
+   position: relative;
+    margin-top: 50px;
+}
+.user-header .circle::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--red);
+    margin-top: 30px;
+    margin-left: 44px;
+}
+.user-profile  label{
+    margin-top: 30px;
+    margin-bottom: 4px;
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: bold;
+}
+.user-profile  input{
+    padding-left: 4px;
+    width: 150px;
+    height: 30px;
+    background-color: #f7f7f7;
+    border: 1px solid #ebebeb;
+}
+.user-profile .botton{
+    width: 110px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    margin-top: 40px;
+    margin-left: 130px;
+}
+.user-profile .fa-user-o::after{
+    content: "";
+    background-color: var(--red);
+    position: absolute;
+    width: 3px;
+    height: 24px;
+    top: 0;
+    left: 174px;
+}
+.user-profile .user-header a{
+    color: var(--red);
+    text-decoration: none;
+}
+.user-profile hr{
+    margin-top: 8px;
+    margin-left: -140px;
+    color: #ccc;
+}
+.user-profile .user-header hr{
+    width: 1100px;
+    color: #ccc;
+    margin-top: 660px;
+}
+.user-profile .bordprofile{
+    width: 1px;
+    height: 650px;
+    background-color:#ebebeb;
+    margin-top: -620px;
+    margin-left: 180px;
+    opacity: 80%;
+}
+.user-profile .fa-user-circle {
+    margin-top: 40px;
+}
+
+
+/************************************Pages******************************************/
+.pages{
+    height: 1700px;
+    background-image: url(image/pattern.png);
+    padding-top: 60px;
+}
+.pages h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--red);
+}
+.pages h1::after{
+    content: "";
+    background-color: var(--blue);
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    margin-top: 40px;
+}
+.pages p{
+    font-size: 20px;
+    color: var(--blue);
+    margin-top: 20px;
+}
+.pages h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--blue);
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.pages .main input{
+    width: 200px;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    margin-left: 36px;
+    margin-top: -26px;
+}
+/***********************************************About-Us**************************************************/
+.aboutus{
+    height: 600px;
+    background-color: var(--red);
+}
+.aboutus h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.aboutus h2::after{
+    content: "";
+    background-color: var(--white);
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    margin-top: 40px;
+}
+.aboutus h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.aboutus img{
+    width: 645px;
+    height: 600px;
+}
+.Satisfaction{
+    height: 400px;
+    padding: 100px;
+}
+.Satisfaction h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--blue);
+}
+.Satisfaction span{
+    display: block;
+    color: var(--red);
+}
+.Satisfaction h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+.Satisfaction p{
+    font-size: 16px;
+    color: var(--blue);
+}
+/*************************************Gallery****************************************/
+.top-Gallery{
+    height: 200px;
+}
+.top-Gallery img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.top-Gallery h1{
+    font-size: 46px;
+    font-weight: bold;
+    color: var(--white);
+    margin-top: -140px;
+    margin-left: 360px;
+}
+.top-Gallery p{
+    font-size: 16px;
+    color: var(--white);
+    margin-left: 360px;
+}
+.top-Gallery a{
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--red);
+}
+.Gallery{
+    height: 1200px;
+    padding-top: 80px;
+}
+.Gallery h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+.Gallery h2::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: var(--red);
+    margin-top: 40px;
+}
+.Gallery .col-12{
+    margin-top: 20px;
+}
+/***********************************Contact Us*******************************************/
+.contact-us{
+    height: 800px;
+}
+.contact-us h2{
+    padding-top: 60px;
+    color: var(--blue);
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;  
+}
+.contact-us h2::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: var(--red);
+    margin-top: 40px;
+}
+.contact-us p{
+    color: var(--blue);
+    font-size: 18px;
+}
+.contact-us input{
+    display: block;
+    width: 700px;
+    height: 50px;
+    margin-top: 30px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+}
+.contact-us textarea{
+    width: 700px;
+    height: 200px;
+    padding-left: 8px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+}
+.contact-us input[type="submit"]{
+    width: 190px;
+    height: 60px;
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--red);
+}
+.contact-us input:hover,
+.contact-us textarea:hover{
+    box-shadow: 0 5px 14px 1.5px rgba(157, 157, 157, 0.329);
+}
+.contact-us h3{
+    margin-top: 200px;
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: bold; 
+    margin-bottom: 20px;  
+}
+.contact-us h4{
+    color: var(--blue);
+    font-size: 18px;
+    font-weight: bold; 
+    margin-bottom: 10px;  
+    margin-top: 16px;
+}
+.contact-us i{
+    color: var(--red);
+    font-size: 40px;
+    margin-top: 30px;
+
+}
